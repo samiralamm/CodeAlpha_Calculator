@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <main>
+        <form class="calculator" autocomplete="off" aria-label="Calculator">
+            <div class="inputs-row">
+                <input type="text" id="display" name="display" placeholder="0" readonly aria-label="Calculator display">
+            </div>
+            <div class="sub-class" role="group" aria-label="Calculator buttons">
+                <div class="fourth-row">
+                    <button type="button" class="button" aria-label="7">7</button>
+                    <button type="button" class="button" aria-label="8">8</button>
+                    <button type="button" class="button" aria-label="9">9</button>
+                    <button type="button" class="button" id="all-clear" aria-label="All Clear">AC</button>
+                    <button type="button" class="button" id="divide" aria-label="Divide">/</button>
+                </div>
+                <div class="third-row">
+                    <button type="button" class="button" aria-label="4">4</button>
+                    <button type="button" class="button" aria-label="5">5</button>
+                    <button type="button" class="button" aria-label="6">6</button>
+                    <button type="button" class="button" id="plus-minus" aria-label="Plus Minus">+/-</button>
+                    <button type="button" class="button" id="multiply" aria-label="Multiply">*</button>
+                </div>
+                <div class="second-row">
+                    <button type="button" class="button" aria-label="1">1</button>
+                    <button type="button" class="button" aria-label="2">2</button>
+                    <button type="button" class="button" aria-label="3">3</button>
+                    <button type="button" class="button" id="percentage" aria-label="Percentage">%</button>
+                    <button type="button" class="button" id="subtract" aria-label="Subtract">-</button>
+                </div>
+                <div class="first-row">
+                    <button type="button" class="button" aria-label="0">0</button>
+                    <button type="button" class="button" aria-label="Decimal">.</button>
+                    <button type="button" class="button" id="equal" aria-label="Equals">=</button>
+                    <button type="button" class="button" id="memory-recall" aria-label="Memory Recall">MR</button>
+                    <button type="button" class="button" id="add" aria-label="Add">+</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

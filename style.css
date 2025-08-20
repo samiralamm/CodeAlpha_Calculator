@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #18181a 0%, #23233a 100%);
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #f4f6fb;
+  font-size: 4em;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5em;
+}
+
+/* Input Row */
+.inputs-row {
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs-row > input {
+  padding: 1.2em;
+  border: none;
+  border-radius: 1em;
+  background: #e0e0e0;
+  color: #23233a;
+  font-size: 1.3em;
+  text-align: -webkit-right;
+  box-shadow: 0 2px 8px rgba(171, 60, 60, 0.08);
+  transition: box-shadow 0.2s, background 0.2s;
+  width: 41.2rem;
+}
+
+.inputs-row > input:focus {
+  outline: 2px solid #f4a42d;
+  background: #f9f9f9;
+}
+
+/* Button Operations */
+#button-operations {
+  display: flex;
+  gap: 1em;
+  margin-top: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Buttons */
+button {
+  padding: 1em 2.5em;
+  border: rgb(46, 46, 197) 0.001em;
+  border-radius: 2em;
+  background: #2a2a2c;
+  color: #f4f6fb;
+  font-size: 1.2em;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin: 0.2em;
+  cursor: pointer;
+  width: 8rem;
+}
+
+button:hover,
+button:focus {
+  background: #6060ba;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(96, 96, 186, 0.15);
+}
+
+/* Special Buttons */
+.fourth-row > #divide,
+.third-row > #multiply,
+.second-row > #subtract,
+.first-row > #equal,
+#add {
+  background: #f4a42d;
+  color: #23233a;
+}
+
+.fourth-row > #all-clear,
+.third-row > #plus-minus,
+.second-row > #percentage,
+.first-row > #memory-recall {
+  background: #5c5c5f;
+  color: #fff;
+}
+
+.sub-class {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.sub-class > div {
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+  justify-content: flex-start;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .inputs-row > input {
+    font-size: 1em;
+    padding: 0.8em 2em;
+  }
+  button {
+    font-size: 1em;
+    padding: 0.7em 1.2em;
+  }
+  #button-operations {
+    flex-direction: column;
+    gap: 0.7em;
+  }
+}
