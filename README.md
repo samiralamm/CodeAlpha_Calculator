@@ -21,9 +21,12 @@ This project demonstrates basic DOM manipulation, event handling, and UI styling
 ---
 
 ## 📂 Project Structure
+bash
+```
 ├── index.html
 ├── style.css
 └── script.js
+```
 ---
 
 ## 🌐 Live Demo
